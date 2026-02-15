@@ -8,17 +8,17 @@
 
 The objective of this project is to develop and compare multiple machine
 learning classification models to predict whether an individual's annual
-income exceeds \$50,000 based on demographic and employment-related
+income exceeds $50,000 based on demographic and employment-related
 attributes.
 
 This project demonstrates an end-to-end machine learning workflow
 including:
 
--   Data preprocessing\
--   Model training\
--   Model evaluation using multiple performance metrics\
--   Comparative analysis of classification models\
--   Development of an interactive Streamlit web application\
+-   Data preprocessing
+-   Model training
+-   Model evaluation using multiple performance metrics
+-   Comparative analysis of classification models
+-   Development of an interactive Streamlit web application
 -   Deployment on Streamlit Community Cloud
 
 ------------------------------------------------------------------------
@@ -27,38 +27,38 @@ including:
 
 **Dataset Used:** Adult Income Dataset (UCI Machine Learning Repository)
 
-The dataset is used to predict whether a person earns more than \$50K
+The dataset is used to predict whether a person earns more than $50K
 per year.
 
 ### Dataset Details:
 
--   Total Instances: 48,842\
--   Total Features: 14\
--   Target Variable: Income (\>50K or \<=50K)\
+-   Total Instances: 48,842
+-   Total Features: 14
+-   Target Variable: Income (>50K or <=50K)
 -   Problem Type: Binary Classification
 
 ### Important Features:
 
--   Age\
--   Workclass\
--   Education\
--   Marital Status\
--   Occupation\
--   Relationship\
--   Race\
--   Sex\
--   Capital Gain\
--   Capital Loss\
--   Hours per Week\
+-   Age
+-   Workclass
+-   Education
+-   Marital Status
+-   Occupation
+-   Relationship
+-   Race
+-   Sex
+-   Capital Gain
+-   Capital Loss
+-   Hours per Week
 -   Native Country
 
 ### Data Preprocessing Steps:
 
--   Removed missing values ("?")\
--   Trimmed whitespace from categorical features\
--   Applied One-Hot Encoding for categorical variables\
--   Applied Standard Scaling for numerical features\
--   Used Pipeline and ColumnTransformer for robust preprocessing\
+-   Removed missing values ("?")
+-   Trimmed whitespace from categorical features
+-   Applied One-Hot Encoding for categorical variables
+-   Applied Standard Scaling for numerical features
+-   Used Pipeline and ColumnTransformer for robust preprocessing
 -   Performed Stratified Train-Test Split (80:20)
 
 ------------------------------------------------------------------------
@@ -68,20 +68,20 @@ per year.
 The following six classification models were implemented on the same
 dataset:
 
-1.  Logistic Regression\
-2.  Decision Tree Classifier\
-3.  K-Nearest Neighbor (KNN)\
-4.  Naive Bayes (GaussianNB)\
-5.  Random Forest (Ensemble Model)\
+1.  Logistic Regression
+2.  Decision Tree Classifier
+3.  K-Nearest Neighbor (KNN)
+4.  Naive Bayes (GaussianNB)
+5.  Random Forest (Ensemble Model)
 6.  XGBoost (Ensemble Model)
 
 For each model, the following evaluation metrics were calculated:
 
--   Accuracy\
--   AUC Score\
--   Precision\
--   Recall\
--   F1 Score\
+-   Accuracy
+-   AUC Score
+-   Precision
+-   Recall
+-   F1 Score
 -   Matthews Correlation Coefficient (MCC)
 
 ------------------------------------------------------------------------
@@ -138,10 +138,10 @@ For each model, the following evaluation metrics were calculated:
 
 The deployed Streamlit application includes:
 
--   CSV Dataset Upload (Test Data)\
--   Model Selection Dropdown\
--   Display of Model Evaluation Metrics\
--   Prediction Output\
+-   CSV Dataset Upload (Test Data)
+-   Model Selection Dropdown
+-   Display of Model Evaluation Metrics
+-   Prediction Output
 -   Robust preprocessing using saved pipeline
 
 ------------------------------------------------------------------------
